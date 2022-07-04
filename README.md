@@ -12,7 +12,7 @@
 <b>Build Instructions</b>: <br>
 1 - Check if exists <b>.env</b> file. If not exists, create and copy value of <b>env_sample.txt</b> <br>
 2 - Needs to install in your machine <b>Docker</b> and <b>docker-compose</b> to build <br> app. i'm use *Docker version 20.10.17* and *docker-compose version 1.28.4* <br>
-3 - Commands to build
+3 - Commands to build on Ubuntu 20.04
 
 ```
   sudo docker-compose build
