@@ -5,8 +5,8 @@
   Ruby: 2.7.5
   Rails: 6.1.4
   Docker
-  Docker-compose
-  Postgresql
+  Docker-Compose
+  PostgreSQL
 ```
 
 <b>Build Instructions</b>: <br>
@@ -17,8 +17,6 @@
 ```
   sudo docker-compose build
   sudo docker-compose run web rake db:create db:migrate
-  sudo docker-compose run web rake db:test:create db:test:migrate
-  sudo docker-compose run web rake db:test:prepare
   sudo docker-compose up
 ```
 4 - On other terminal tab, run:
@@ -34,6 +32,8 @@ if happens problems will return random error message
 
 5 - For run tests
 ```
+  sudo docker-compose run web rake db:test:create db:test:migrate
+  sudo docker-compose run web rake db:test:prepare
   sudo docker-compose run web bundle exec rspec
 ```
 
