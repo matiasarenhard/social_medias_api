@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Twitter
   include Api::V1::ApiHelper
 

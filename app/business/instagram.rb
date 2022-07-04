@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Instagram
   include Api::V1::ApiHelper
 
